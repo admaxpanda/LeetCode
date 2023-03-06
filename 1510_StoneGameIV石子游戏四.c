@@ -1,3 +1,8 @@
+/*
+    一个DP的策略，实际上没有“博弈”中的最优策略
+    在都是最优的情况下，只有一个胜利者，如果A赢，B就输
+    因此只需要先找到能赢的，不能赢就是输，不能输就是赢
+*/
 #include <stdlib.h>
 int winnerSquareGame(int n){
     char *dp=malloc(n+1);
